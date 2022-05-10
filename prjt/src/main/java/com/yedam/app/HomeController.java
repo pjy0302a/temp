@@ -35,5 +35,10 @@ public class HomeController {
 		
 		return "home";
 	}
+	@RequestMapping("/calendar")
+	public String calendar(Locale lc) {
+		logger.info("Welcome home! The client locale is {}.", lc);
+		return "calendar";
+	}
 	
 }
